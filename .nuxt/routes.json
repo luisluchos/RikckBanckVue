@@ -1,0 +1,37 @@
+[
+  {
+    "name": "characters",
+    "path": "/characters",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\VueF\\\\rick-morty\\\\pages\\\\characters.vue",
+    "chunkName": "pages/characters",
+    "_name": "_043ae3c7"
+  },
+  {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\VueF\\\\rick-morty\\\\pages\\\\dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_44214a72"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\VueF\\\\rick-morty\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_f5f81ac8"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\VueF\\\\rick-morty\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_36925e80"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\VueF\\\\rick-morty\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_894760f6"
+  }
+]

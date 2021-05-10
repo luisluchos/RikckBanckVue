@@ -1,0 +1,35 @@
+{
+  "Balance": {
+    "description": "Auto imported from components/Balance.vue"
+  },
+  "Deposit": {
+    "description": "Auto imported from components/Deposit.vue"
+  },
+  "Home": {
+    "description": "Auto imported from components/Home.vue"
+  },
+  "ListaCharacters": {
+    "description": "Auto imported from components/ListaCharacters.vue"
+  },
+  "Loan": {
+    "description": "Auto imported from components/Loan.vue"
+  },
+  "LoanBalance": {
+    "description": "Auto imported from components/LoanBalance.vue"
+  },
+  "Login": {
+    "description": "Auto imported from components/Login.vue"
+  },
+  "Pay": {
+    "description": "Auto imported from components/Pay.vue"
+  },
+  "Register": {
+    "description": "Auto imported from components/Register.vue"
+  },
+  "Transfer": {
+    "description": "Auto imported from components/Transfer.vue"
+  },
+  "TxTable": {
+    "description": "Auto imported from components/TxTable.vue"
+  }
+}
