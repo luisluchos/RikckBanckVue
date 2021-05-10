@@ -1,6 +1,5 @@
 <template>
   <div>
-    <b-button variant="success" @click="getCharacters">Get Characters</b-button>
     <table class="table">
       <thead>
         <tr>
@@ -25,11 +24,19 @@
 
 <script>
 export default {
+  data() {
+    return {}
+  },
   computed: {
     characters() {
       return this.$store.state.characters.characters
       // entro en store y busco de todos los state, el archivo characters que contenga el state characters
     },
+  },
+  created() {
+    // fetch the data when the view is created and the data is
+    // already being observed
+    this.getCharacters()
   },
   methods: {
     getCharacters() {

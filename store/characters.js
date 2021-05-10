@@ -11,7 +11,7 @@ export const mutations = {
 }
 
 export const actions = {
-  async getCharacters({ commit }) {
+  async getCharacters({ commit, state, dispatch }) {
     try {
       const characters = await getCharacters()
       commit('setCharacters', characters.data.results)
