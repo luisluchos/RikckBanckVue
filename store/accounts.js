@@ -2,11 +2,12 @@ import _ from 'lodash'
 import { error, success } from '~/plugins/swal'
 import {
   getAccount,
-  editAccount,
   getUserId,
   createTransaction,
   getTxFrom,
   getTxTo,
+  editAccountBalance,
+  editAccountLoan,
 } from '~/plugins/firebase'
 
 export const state = () => ({
@@ -76,15 +77,13 @@ export const actions = {
       from: 'Bank',
       to: rootState.auth.userId,
     })
-    await editAccount({
+    await editAccountBalance({
       id: 'ROOT',
       balance: totalA,
-      loanBalance: false,
     })
-    await editAccount({
+    await editAccountBalance({
       id: rootState.auth.userId,
       balance: totalB,
-      loanBalance: false,
     })
     dispatch('setUserAccount')
     dispatch('setUserTxs')
@@ -104,12 +103,12 @@ export const actions = {
       from: 'Bank',
       to: rootState.auth.userId,
     })
-    await editAccount({
+    await editAccountLoan({
       id: 'ROOT',
       balance: totalA,
       loanBalance: false,
     })
-    await editAccount({
+    await editAccountLoan({
       id: rootState.auth.userId,
       balance: totalB,
       loanBalance: totalLoanBalance,
@@ -121,9 +120,9 @@ export const actions = {
 
   async transfer({ rootState, state, dispatch }, { email, amount }) {
     const userBId = await getUserId(email)
-    const balanceA = state.account.balance
-    const accountB = await getAccount(userBId)
-    const balanceB = accountB.balance
+    const balanceA = state.account.balance || 0
+    const accountB = (await getAccount(userBId)) || 0
+    const balanceB = accountB.balance || 0
     const totalA = balanceA - amount
     const totalB = balanceB + amount
     await createTransaction({
@@ -132,15 +131,13 @@ export const actions = {
       from: rootState.auth.userId,
       to: userBId,
     })
-    await editAccount({
+    await editAccountBalance({
       id: rootState.auth.userId,
       balance: totalA,
-      loanBalance: false,
     })
-    await editAccount({
+    await editAccountBalance({
       id: userBId,
       balance: totalB,
-      loanBalance: false,
     })
     dispatch('setUserAccount')
     dispatch('setUserTxs')
@@ -162,12 +159,12 @@ export const actions = {
       from: rootState.auth.userId,
       to: 'Bank',
     })
-    await editAccount({
+    await editAccountLoan({
       id: rootState.auth.userId,
       balance: totalA,
       loanBalance: totalLoanBalance,
     })
-    await editAccount({
+    await editAccountLoan({
       id: 'ROOT',
       balance: totalB,
       loanBalance: false,

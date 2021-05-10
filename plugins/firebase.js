@@ -134,7 +134,15 @@ export const getAccount = async (idUser, email) => {
   }
 }
 
-export const editAccount = async ({ balance, loanBalance, id }) => {
+export const editAccountBalance = async ({ balance, id }) => {
+  try {
+    await accounts.doc(id).update({ balance })
+  } catch (error) {
+    return error
+  }
+}
+
+export const editAccountLoan = async ({ balance, loanBalance, id }) => {
   try {
     await accounts.doc(id).update({ balance, loanBalance })
   } catch (error) {
