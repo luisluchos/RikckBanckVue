@@ -23,7 +23,7 @@
     {
       "hid": "description",
       "name": "description",
-      "content": "## Build Setup"
+      "content": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**"
     },
     {
       "hid": "og:type",
@@ -47,7 +47,7 @@
       "hid": "og:description",
       "name": "og:description",
       "property": "og:description",
-      "content": "## Build Setup"
+      "content": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**"
     }
   ],
   "link": [
@@ -64,7 +64,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.50b86eb3.json",
+      "href": "/_nuxt/manifest.c89afc4e.json",
       "hid": "manifest"
     }
   ],
