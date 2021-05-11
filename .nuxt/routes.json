@@ -2,36 +2,36 @@
   {
     "name": "characters",
     "path": "/characters",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\bankrickandmorty\\\\pages\\\\characters.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\characters.vue",
     "chunkName": "pages/characters",
-    "_name": "_4e76af48"
+    "_name": "_a3976cd6"
   },
   {
     "name": "dashboard",
     "path": "/dashboard",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\bankrickandmorty\\\\pages\\\\dashboard.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\dashboard.vue",
     "chunkName": "pages/dashboard",
-    "_name": "_7d3b9b26"
+    "_name": "_3929f98e"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\bankrickandmorty\\\\pages\\\\login.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\login.vue",
     "chunkName": "pages/login",
-    "_name": "_cff58b0a"
+    "_name": "_ef0cb7e4"
   },
   {
     "name": "register",
     "path": "/register",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\bankrickandmorty\\\\pages\\\\register.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\register.vue",
     "chunkName": "pages/register",
-    "_name": "_f27ceefe"
+    "_name": "_fc695be4"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\bankrickandmorty\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_6344d138"
+    "_name": "_825bfe12"
   }
 ]

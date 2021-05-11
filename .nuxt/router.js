@@ -4,11 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _4e76af48 = () => interopDefault(import('..\\pages\\characters.vue' /* webpackChunkName: "pages/characters" */))
-const _7d3b9b26 = () => interopDefault(import('..\\pages\\dashboard.vue' /* webpackChunkName: "pages/dashboard" */))
-const _cff58b0a = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _f27ceefe = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
-const _6344d138 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _a3976cd6 = () => interopDefault(import('..\\pages\\characters.vue' /* webpackChunkName: "pages/characters" */))
+const _3929f98e = () => interopDefault(import('..\\pages\\dashboard.vue' /* webpackChunkName: "pages/dashboard" */))
+const _ef0cb7e4 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _fc695be4 = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
+const _825bfe12 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -23,23 +23,23 @@ export const routerOptions = {
 
   routes: [{
     path: "/characters",
-    component: _4e76af48,
+    component: _a3976cd6,
     name: "characters"
   }, {
     path: "/dashboard",
-    component: _7d3b9b26,
+    component: _3929f98e,
     name: "dashboard"
   }, {
     path: "/login",
-    component: _cff58b0a,
+    component: _ef0cb7e4,
     name: "login"
   }, {
     path: "/register",
-    component: _f27ceefe,
+    component: _fc695be4,
     name: "register"
   }, {
     path: "/",
-    component: _6344d138,
+    component: _825bfe12,
     name: "index"
   }],
 

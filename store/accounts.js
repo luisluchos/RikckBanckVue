@@ -28,6 +28,8 @@ export const mutations = {
 }
 
 export const actions = {
+  // obtener la info que tenemos gurdada en otra Store con roosState, y la mostramos actualizada,
+  // capturamos el user ID y nos tremos de DB el estado de su cuenta.
   async setUserAccount(ctx) {
     try {
       const account = await getAccount(ctx.rootState.auth.userId)
@@ -36,7 +38,8 @@ export const actions = {
       error.fire(err)
     }
   },
-
+  // obtener la info que tenemos gurdada, y la mostramos actualizada
+  // capturamos el user ID y nos tremos de DB el estado de sus transacciones.
   async setUserTxs({ commit, rootState }) {
     try {
       const from = await getTxFrom(rootState.auth.userId)

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Loan Balance = {{ loanBalance || 0 }}</h2>
+    <h2>Loan Balance = {{ loanBalance || 0 | currency }}</h2>
   </div>
 </template>
 

@@ -114,11 +114,11 @@ export const logOut = async () => {
     return error
   }
 }
-
+// obtenemos la cuenta.
+// si no existe data, le cremoas una cuenta bancaria
 export const getAccount = async (idUser, email) => {
   try {
     const userAccount = await accounts.doc(idUser).get()
-    console.log('data de la cuenta ', userAccount.data())
     if (userAccount.data() === undefined) {
       const userEmail = await users.doc(idUser).get({ email }).data()
 
