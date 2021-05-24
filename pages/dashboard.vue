@@ -43,9 +43,11 @@ export default {
     Pay,
   },
   middleware: 'checkAuth',
-  // nos traemos los datos del user
+  // con fetch lanzamos la acción setUserAccount,lo que actualiará la store de accounts, y podremos usar los datos en los componentes hijos
+  // podemos lanzarla aquí con fecth o en el componente con create, como ejemplo txTable
   fetch() {
     this.$store.dispatch('accounts/setUserAccount')
+    /* this.$store.dispatch('accounts/setUserTxs') */
   },
 }
 </script>

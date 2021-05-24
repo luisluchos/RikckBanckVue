@@ -45,6 +45,7 @@ export default {
       lang: 'en',
     },
   },
+  // Nuxt.js lets you create environment variables client side, also to be shared from server side.
   env: {
     apiKey: 'AIzaSyDZIR7eS11Zbe_pi-Db9L7y4KGj2nOMJ4g',
     authDomain: 'crudvuejsapp.firebaseapp.com',

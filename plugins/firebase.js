@@ -11,7 +11,7 @@ const config = {
   appId: process.env.appId,
 }
 if (!firebase.apps.length) {
-  firebase.initializeApp(config)
+  firebase.initializeApp(config) // if not initialized, initializeApp
 }
 
 const auth = firebase.auth()
@@ -150,6 +150,11 @@ export const editAccountLoan = async ({ balance, loanBalance, id }) => {
   }
 }
 
+/**
+ *
+ * @param  email
+ * @returns  the id user
+ */
 export const getUserId = async (email) => {
   try {
     const results = await users.where('email', '==', email).get()
@@ -162,7 +167,11 @@ export const getUserId = async (email) => {
     return error
   }
 }
-
+/**
+ * CretateTansaction()
+ * @param tx recibimos la información de la transferencia
+ * @returns lo metemos en la dataBase
+ */
 export const createTransaction = async (tx) => {
   try {
     const timestamp = Math.floor(new Date().getTime() / 1000)
@@ -174,11 +183,16 @@ export const createTransaction = async (tx) => {
     return error
   }
 }
-
+/**
+ *
+ * @param  id user
+ * @returns  the "from" transactions that match the id
+ */
 export const getTxFrom = async (id) => {
   try {
     const txs = await transactions.where('from', '==', id).get()
     let results = []
+    // with .for each and .data we catch the info
     txs.forEach((doc) => {
       results = [...results, doc.data()]
     })
@@ -187,7 +201,11 @@ export const getTxFrom = async (id) => {
     return error
   }
 }
-
+/**
+ *
+ * @param  id user
+ * @returns  the "to" transactions that match the id
+ */
 export const getTxTo = async (id) => {
   try {
     const txs = await transactions.where('to', '==', id).get()

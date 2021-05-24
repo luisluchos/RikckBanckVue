@@ -28,11 +28,13 @@ export const mutations = {
 }
 
 export const actions = {
-  // obtener la info que tenemos gurdada en otra Store con roosState, y la mostramos actualizada,
-  // capturamos el user ID y nos tremos de DB el estado de su cuenta.
+  // get the info that we have saved in another Store with roosState, and we show it updated,
+  // we capture the user ID and we get from the DB the status of the account.
   async setUserAccount(ctx) {
+    // context , we can use also destruc { commit, rootState }
     try {
       const account = await getAccount(ctx.rootState.auth.userId)
+      console.log('ctx.rootState.auth', ctx.rootState.auth)
       ctx.commit('setUserAccount', account)
     } catch (err) {
       error.fire(err)
@@ -46,6 +48,7 @@ export const actions = {
       const to = await getTxTo(rootState.auth.userId)
       const allTxs = [...to, ...from]
       const sortedTxs = _.orderBy(
+        // usamos las funciones de lodash para ordenar
         allTxs,
         (tx) => {
           return tx.timestamp

@@ -49,7 +49,6 @@ export default {
   computed: {
     errors() {
       return this.$store.state.auth.error
-      // entro en store y busco de todos los state, el archivo characters que contenga el state characters
     },
   },
 

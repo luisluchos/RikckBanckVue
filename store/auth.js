@@ -5,7 +5,7 @@ import {
   registroGoogle,
   logOut,
 } from '~/plugins/firebase'
-import { success } from '~/plugins/swal'
+// import { success } from '~/plugins/swal'
 
 export const state = () => ({
   token: '',
@@ -79,7 +79,7 @@ export const actions = {
       commit('setUser', user)
       this.$router.push('/dashboard')
     } catch (error) {
-      success.fire(`Deposited ${error} to your account!`)
+      // success.fire(`Deposited ${error} to your account!`)
       alert(error)
     }
   },

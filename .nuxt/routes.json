@@ -2,36 +2,36 @@
   {
     "name": "characters",
     "path": "/characters",
-    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\characters.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\Vue\\\\bankrickandmorty\\\\pages\\\\characters.vue",
     "chunkName": "pages/characters",
-    "_name": "_a3976cd6"
+    "_name": "_28a1341f"
   },
   {
     "name": "dashboard",
     "path": "/dashboard",
-    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\dashboard.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\Vue\\\\bankrickandmorty\\\\pages\\\\dashboard.vue",
     "chunkName": "pages/dashboard",
-    "_name": "_3929f98e"
+    "_name": "_945cc122"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\login.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\Vue\\\\bankrickandmorty\\\\pages\\\\login.vue",
     "chunkName": "pages/login",
-    "_name": "_ef0cb7e4"
+    "_name": "_06d2cb44"
   },
   {
     "name": "register",
     "path": "/register",
-    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\register.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\Vue\\\\bankrickandmorty\\\\pages\\\\register.vue",
     "chunkName": "pages/register",
-    "_name": "_fc695be4"
+    "_name": "_6ab551d0"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\bankrickandmorty\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Desktop\\\\app\\\\Vue\\\\bankrickandmorty\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_825bfe12"
+    "_name": "_3d2b282d"
   }
 ]
